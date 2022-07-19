@@ -1,0 +1,179 @@
+/* =========================================
+            Fonts
+=========================================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@700&display=swap');
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* GLobal Styles */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary-font);
+    font-weight: 700;
+}
+:root{
+    /* Font family */
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Inter', sans-serif;
+    --tertiary-font: 'Roboto', sans-serif;
+
+    /* color */
+    --primary-color: #3A3A3A;
+    --secondary-color: #E02C6D;
+}
+.container{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+
+/* =========================================
+            Header Style
+=========================================== */
+.large-screen-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 90px 0px 50px 0px;
+}
+.right-menu > ul{
+    display: flex;
+}
+.right-menu > ul >li{
+    list-style-type: none;
+}
+.shop-name{
+    font-size: 24px;
+    color: var(--primary-color);
+}
+.nav-link{
+    color: var(--primary-color);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 17px;
+}
+.nav-link:hover,.shop-name:hover{
+    color: var(--secondary-color);
+}
+/* =========================================
+            Banner Style
+=========================================== */
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.half-width{
+    width: 50%;
+}
+.padding-right{
+    padding-right: 1%;
+}
+.banner-title{
+    font-size: 52px;
+    color: var(--primary-color);
+    line-height: 70px;
+}
+.banner-pera{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 16px 0;;
+}
+.banner-cta{
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    padding: 10px 25px;
+    background-color: var(--secondary-color);
+    border: 2px solid transparent;
+    border-radius: 50px;
+    transition: background-color 500ms;
+}
+.banner-cta > .fa-arrow-right{
+    margin-left: 8px;
+}
+.banner-cta:hover{
+    color: var(--secondary-color);
+    padding: 10px 25px;
+    background-color: #fff;
+    border: 2px solid var(--secondary-color);
+}
+.banner-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 3%;
+}
+.banner-img{
+    width: 100%;
+}
+
+
+/* =========================================
+           Popular collection
+=========================================== */
+.section-title{
+    color: var(--primary-color);
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 30px;
+    margin-top: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product{
+    padding: 17px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.product-img{
+    width: 100%;
+    margin-bottom: 16px;
+}
+.product-title{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: var(--primary-color);
+}
+.price{
+    font-size: 24px;
+    line-height: 36px;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    color: #18191F;
+}
+.rating{
+    color: #FB8200;
+    margin: 8px 0;
+}
+.rating span{
+    font-family: var(--tertiary-font);
+    color: rgba(94, 99, 102, 1);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+.product-info{
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    line-height: 143%;
+    color: #787885;
+}
