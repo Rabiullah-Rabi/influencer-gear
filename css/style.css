@@ -117,6 +117,27 @@ a{
 .banner-img{
     width: 100%;
 }
+/* =========================================
+           Partners logo section
+=========================================== */
+#partners{
+
+}
+.partners-logo-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 70px auto 100px auto;
+    padding: 35px 0px;
+    border: 3px solid transparent;
+    border-image: url();
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+.partner-logo{
+}
+
 
 
 /* =========================================
@@ -133,7 +154,7 @@ a{
     grid-template-columns: repeat(3 , 1fr);
     gap: 30px;
     margin-top: 30px;
-    width: 90%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -176,4 +197,23 @@ a{
     font-size: 14px;
     line-height: 143%;
     color: #787885;
+}
+.see-more-btn-wrapper{
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+    margin: 50px auto;
+}
+.see-more{
+   color: var(--secondary-color);
+   font-size: 16px;
+   line-height: 24px;
+   display: flex;
+   align-items: center;   
+}
+.see-more:hover{
+    color: var(--primary-color);
+}
+.see-more .fa-arrow-right-long{
+    margin-left: 8px;
 }
